@@ -1,0 +1,202 @@
+:root{
+    background-color: #869960;
+}
+body{
+    margin-top: 100px;
+    font-family: Tahoma, sans-serif;
+    font-size: 87%;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+/*Banner Overlay*/
+/*we use z-index to make our alignemnt take precedence over another overlapping item*/    
+/*
+.image-banner{
+    position: relative;
+    z-index: 10;
+}
+.image-banner img{
+    display: block;
+}
+.banner-description{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: #fff;
+    background-color:rgba(0, 0, 0, 0.65);
+    padding: 15px 25px;
+}
+/*End of banner overlay*/
+/*Table styles
+table{
+    border-spacing: 0;
+    border-collapse: collapse;
+    width: 100%;
+    
+}
+.col-item-name{
+    width: 60%;
+}
+.col-quantity,.col-price{
+    width: 20%;
+}
+
+table th{
+    text-align: left;
+    background-color: #869960;
+    color: #fff;
+    text-shadow: 1px 1px 0 rgba(0,0,0,0.4);
+}
+table th,table td{
+    border: 1px solid  #869960;
+    padding: 10px;
+    vertical-align: top;
+}
+table tbody tr:nth-child(odd) td {
+    background-color: #e5e9dc;
+}
+table.grocery-list tr :nth-child(2),table.grocery-list tr :nth-child(3){
+    text-align: center;
+}
+End of table styles*/
+/*Styling forms*/
+form{
+    background-color: #ECECEC;
+    padding: 30px 40px;
+}
+.hidden-label{
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+input,select{
+    font-family: Tahoma,sans-serif;
+    font-size: 100%;
+}
+input[type="email"],input[type="password"],select{
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    padding: 0 10px;
+    height: 40px;    
+    margin-bottom: 15px;
+    border: 1px solid #CDCDCD;
+    outline: none;
+}
+input[type="email"]:focus,input[type="password"]:focus{
+    border: 1px solid #869960;
+    box-shadow: inset 2px 2px 2px rgba(0,0,0,.13);
+
+}
+input[type="submit"]{
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    background-color: #869960;
+    color: #FFF;
+    padding: 10px;
+    border: 1px solid #798a56;
+    border-radius: 3px;
+    margin-bottom: 10px;   
+    outline: none;
+}
+input[type="submit"]:hover,input[type="submit"]:focus{
+    border: 1px solid #553E3B;
+    background-color: #798a56;
+}
+.checkbox-text{
+    font-size: 85%;
+    color: #777;
+}
+/*End of styling forms*/
+.container{
+    
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+    padding-left: 40px;
+    padding-right: 40px;
+    box-sizing: border-box;
+}
+header{
+    padding-top:20px;
+    color: #617140;
+}
+header h1{
+    margin: 0;
+    font-weight: normal;
+    font-size: 165%;
+}
+header p{
+    margin: 0;
+}
+/*Start of site navigation*/
+.site-nav{
+    margin-top: 20px;
+}
+.site-nav ul{
+    margin: 0;
+    padding: 0;
+}
+.site-nav li{
+    list-style: none;
+    float: left;
+    margin-right: 5px;
+}
+.site-nav a{
+   display: block;
+    text-decoration: none;
+    color: #617140;
+    padding: 10px 20px;
+    border: 3px solid #e5e9dc; 
+    border-bottom: none;
+}
+.site-nav a:hover{
+    background-color: #e5e9dc; 
+}
+/*End of site navigation*/
+.content-area{
+    border-top: 3px solid #e5e9dc;
+    border-bottom: 3px solid #e5e9dc;
+
+}
+.main-area{
+    width: 66%;
+    float: left;
+    padding-right: 40px;
+    box-sizing: border-box;
+}
+
+.side-bar{
+    width: 34%;
+    float: left;
+    background-color: #e5e9dc;
+   padding: 20px 40px;
+    box-sizing: border-box;
+    font-size: 85%;
+}
+footer{
+    text-align: center;
+    font-size: 85%;
+    color: #999;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+/*Since the parent element will not recognize a child element that is in a float we use the element below*/
+.group:before,
+.group:after{
+    content: "";
+    display: table;
+}
+.group:after{
+    clear: both;
+}
+.group{
+    zoom: 1;
+}
